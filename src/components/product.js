@@ -11,7 +11,6 @@ import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -35,12 +34,12 @@ export default function Product() {
     <Card sx={{ maxWidth: 345 }}>
       <CardHeader
         action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
+          <Typography variant=" h5 " color=" textSecondary ">
+            {50}
+          </Typography>
         }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+        title="Shoes"
+        subheader="In stock"
       />
       <CardMedia
         component="img"
